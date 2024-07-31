@@ -16,15 +16,15 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 
-        0 0 0 9px #0033a0,   /* Blue */
-        0 0 0 11px #ffffff,  /* White */
-        0 0 0 16px #00793e,  /* Green */
-        0 0 0 18px #ffb612,  /* Yellow */
-        0 0 0 22px #000000,  /* Black */
-        0 0 0 24px #ffb612,  /* Yellow */
-        0 0 0 27px #00793e,  /* Green */
-        0 0 0 29px #ffffff,  /* White */
-        0 0 0 38px #ff0000;  /* Red */
+        0 0 0 6px #0033a0,   /* Blue */
+        0 0 0 8px #ffffff,  /* White */
+        0 0 0 12px #00793e,  /* Green */
+        0 0 0 14px #ffb612,  /* Yellow */
+        0 0 0 18px #000000,  /* Black */
+        0 0 0 20px #ffb612,  /* Yellow */
+        0 0 0 24px #00793e,  /* Green */
+        0 0 0 26px #ffffff,  /* White */
+        0 0 0 32px #ff0000;  /* Red */
 }
 
 .logo {

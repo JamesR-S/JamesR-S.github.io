@@ -1,468 +1,71 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Ennis - Important locations and scripts</title>
-
-
-<style type="text/css">
 body {
-  font-family: Helvetica, arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.6;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: white;
-  padding: 30px; }
-
-body > *:first-child {
-  margin-top: 0 !important; }
-body > *:last-child {
-  margin-bottom: 0 !important; }
-
-a {
-  color: #4183C4; }
-a.absent {
-  color: #cc0000; }
-a.anchor {
-  display: block;
-  padding-left: 30px;
-  margin-left: -30px;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0; }
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 20px 0 10px;
-  padding: 0;
-  font-weight: bold;
-  -webkit-font-smoothing: antialiased;
-  cursor: text;
-  position: relative; }
-
-h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
-  text-decoration: none; }
-
-h1 tt, h1 code {
-  font-size: inherit; }
-
-h2 tt, h2 code {
-  font-size: inherit; }
-
-h3 tt, h3 code {
-  font-size: inherit; }
-
-h4 tt, h4 code {
-  font-size: inherit; }
-
-h5 tt, h5 code {
-  font-size: inherit; }
-
-h6 tt, h6 code {
-  font-size: inherit; }
-
-h1 {
-  font-size: 28px;
-  color: black; }
-
-h2 {
-  font-size: 24px;
-  border-bottom: 1px solid #cccccc;
-  color: black; }
-
-h3 {
-  font-size: 18px; }
-
-h4 {
-  font-size: 16px; }
-
-h5 {
-  font-size: 14px; }
-
-h6 {
-  color: #777777;
-  font-size: 14px; }
-
-p, blockquote, ul, ol, dl, li, table, pre {
-  margin: 15px 0; }
-
-hr {
-  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
-  border: 0 none;
-  color: #cccccc;
-  height: 4px;
-  padding: 0;
-}
-
-body > h2:first-child {
-  margin-top: 0;
-  padding-top: 0; }
-body > h1:first-child {
-  margin-top: 0;
-  padding-top: 0; }
-  body > h1:first-child + h2 {
-    margin-top: 0;
-    padding-top: 0; }
-body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
-  margin-top: 0;
-  padding-top: 0; }
-
-a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
-  margin-top: 0;
-  padding-top: 0; }
-
-h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
-  margin-top: 0; }
-
-li p.first {
-  display: inline-block; }
-li {
-  margin: 0; }
-ul, ol {
-  padding-left: 30px; }
-
-ul :first-child, ol :first-child {
-  margin-top: 0; }
-
-dl {
-  padding: 0; }
-  dl dt {
-    font-size: 14px;
-    font-weight: bold;
-    font-style: italic;
-    padding: 0;
-    margin: 15px 0 5px; }
-    dl dt:first-child {
-      padding: 0; }
-    dl dt > :first-child {
-      margin-top: 0; }
-    dl dt > :last-child {
-      margin-bottom: 0; }
-  dl dd {
-    margin: 0 0 15px;
-    padding: 0 15px; }
-    dl dd > :first-child {
-      margin-top: 0; }
-    dl dd > :last-child {
-      margin-bottom: 0; }
-
-blockquote {
-  border-left: 4px solid #dddddd;
-  padding: 0 15px;
-  color: #777777; }
-  blockquote > :first-child {
-    margin-top: 0; }
-  blockquote > :last-child {
-    margin-bottom: 0; }
-
-table {
-  padding: 0;border-collapse: collapse; }
-  table tr {
-    border-top: 1px solid #cccccc;
-    background-color: white;
-    margin: 0;
-    padding: 0; }
-    table tr:nth-child(2n) {
-      background-color: #f8f8f8; }
-    table tr th {
-      font-weight: bold;
-      border: 1px solid #cccccc;
-      margin: 0;
-      padding: 6px 13px; }
-    table tr td {
-      border: 1px solid #cccccc;
-      margin: 0;
-      padding: 6px 13px; }
-    table tr th :first-child, table tr td :first-child {
-      margin-top: 0; }
-    table tr th :last-child, table tr td :last-child {
-      margin-bottom: 0; }
-
-img {
-  max-width: 100%; }
-
-span.frame {
-  display: block;
-  overflow: hidden; }
-  span.frame > span {
-    border: 1px solid #dddddd;
-    display: block;
-    float: left;
-    overflow: hidden;
-    margin: 13px 0 0;
-    padding: 7px;
-    width: auto; }
-  span.frame span img {
-    display: block;
-    float: left; }
-  span.frame span span {
-    clear: both;
-    color: #333333;
-    display: block;
-    padding: 5px 0 0; }
-span.align-center {
-  display: block;
-  overflow: hidden;
-  clear: both; }
-  span.align-center > span {
-    display: block;
-    overflow: hidden;
-    margin: 13px auto 0;
-    text-align: center; }
-  span.align-center span img {
-    margin: 0 auto;
-    text-align: center; }
-span.align-right {
-  display: block;
-  overflow: hidden;
-  clear: both; }
-  span.align-right > span {
-    display: block;
-    overflow: hidden;
-    margin: 13px 0 0;
-    text-align: right; }
-  span.align-right span img {
-    margin: 0;
-    text-align: right; }
-span.float-left {
-  display: block;
-  margin-right: 13px;
-  overflow: hidden;
-  float: left; }
-  span.float-left span {
-    margin: 13px 0 0; }
-span.float-right {
-  display: block;
-  margin-left: 13px;
-  overflow: hidden;
-  float: right; }
-  span.float-right > span {
-    display: block;
-    overflow: hidden;
-    margin: 13px auto 0;
-    text-align: right; }
-
-code, tt {
-  margin: 0 2px;
-  padding: 0 5px;
-  white-space: nowrap;
-  border: 1px solid #eaeaea;
-  background-color: #f8f8f8;
-  border-radius: 3px; }
-
-pre code {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   margin: 0;
   padding: 0;
-  white-space: pre;
-  border: none;
-  background: transparent; }
-
-.highlight pre {
-  background-color: #f8f8f8;
-  border: 1px solid #cccccc;
-  font-size: 13px;
-  line-height: 19px;
-  overflow: auto;
-  padding: 6px 10px;
-  border-radius: 3px; }
-
-pre {
-  background-color: #f8f8f8;
-  border: 1px solid #cccccc;
-  font-size: 13px;
-  line-height: 19px;
-  overflow: auto;
-  padding: 6px 10px;
-  border-radius: 3px; }
-  pre code, pre tt {
-    background-color: transparent;
-    border: none; }
-
-sup {
-    font-size: 0.83em;
-    vertical-align: super;
-    line-height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #00356b; /* University of Exeter blue */
 }
 
-kbd {
-  display: inline-block;
-  padding: 3px 5px;
-  font-size: 11px;
-  line-height: 10px;
-  color: #555;
-  vertical-align: middle;
-  background-color: #fcfcfc;
-  border: solid 1px #ccc;
-  border-bottom-color: #bbb;
-  border-radius: 3px;
-  box-shadow: inset 0 -1px 0 #bbb
+.outermost {
+  padding: 4px;
+  background-color: #ff0000; /* Red */
 }
 
-* {
-	-webkit-print-color-adjust: exact;
-}
-@media screen and (min-width: 914px) {
-    body {
-        width: 854px;
-        margin:0 auto;
-    }
-}
-@media print {
-	table, pre {
-		page-break-inside: avoid;
-	}
-	pre {
-		word-wrap: break-word;
-	}
-  body {
-    padding: 2cm; 
-  }
-}
-</style>
-
-
-</head>
-
-<body>
-
-<h2 id="toc_0">Ennis - Important locations and scripts v1.1.0</h2>
-
-<p>Author: James Russ-Silsby</p>
-
-<p>Date: 22/7/2024</p>
-
-<h3 id="toc_1">1. Locations</h3>
-
-<p>All data relating to the Exeter sequencing cohort is stored within <code>/ennis/projects/Research_Project-MRC147594/</code>.</p>
-
-<p>Within this directory you will find the following sub-directories:</p>
-
-<ul>
-<li>  <code>array_data</code> - Data from both SNP and EPiC Methylation arrays.</li>
-<li>  <code>exome_sequencing</code> - Whole exome sequencing data.</li>
-<li>  <code>genome_sequencing</code> - Whole genome sequencing data.</li>
-<li>  <code>resources</code> - Genome reference builds and annotation datasets.</li>
-<li>  <code>software</code> - Software used in genome pipeline, savvysuite tools, Matthews plotting scripts, tNGS Ancestry pipeline, etc.</li>
-<li>  <code>targeted_sequencing</code> - Targeted next generation sequencing data.</li>
-</ul>
-
-<p>Slade directories are also accessible on ennis. Most of the data on slade is used by the complex traits team, but some useful directories worth noting are:</p>
-
-<ul>
-<li>  <code>/slade/projects/Research_Project-MRC158833/tfs_chromatin</code> - this contains functional data from various papers that Nick has downloaded, useful scripts and notebooks he has created and data from his own functional experiments.</li>
-<li>  <code>/slade/projects/Public_Ref_Datasets/</code> - This contains publicly available datasets that are useful for variant annotation.</li>
-<li>  <code>/slade/projects/Public_GWAS_summary_stats/</code> - This contains a huge array of association data from different GWAS projects, including UK Biobank, DECODE, Genes and Health, BioBank Japan and others.</li>
-</ul>
-
-<h4 id="toc_2">1.1 WGS data</h4>
-
-<p>Some important locations to note within the <code>genome_sequencing</code> directory are as follows:</p>
-
-<ul>
-<li>  <code>families</code>—This directory contains data from joint analysis on sets of individuals who were not originally processed as trios. N.B. As these have primarily been run to test for shared haplotypes, not all of the standard pipeline steps are run, and as such, many of the r03_* folders will not have data. However, SNV/Indel data in vcf, gvcf, and Alamut format and CNV data from savvy are all available.</li>
-<li>  <code>manual lists</code> - this directory contains text files containing data on all of the individuals sequenced in the Exeter cohort (including exome and tNGS). One of the most useful files is <code>sample_details.tsv</code>, which contains a corresponding MODYdb and EX numbers for all samples as well IDs of known relatives and phenotype. <code>sample_trios</code>, <code>sample_singletons</code> and <code>sample_other</code> are also useful and contain data on consanguinuity, phenotype and whether the individual is solved (although this is sometimes out of date).</li>
-<li>  <code>shared_tngs_haplotypes</code> - this contains data from Mathew&#39;s analysis of shared haplotypes between WGS and tNGS sequenced individuals.</li>
-<li>  <code>variant_search_scripts</code> - this contains scripts I have written/modified for performing variant searches based on genomic regions. Currently, it contains <code>Alamut_File_query.sh</code>, which is essentially Jaz&#39;s script updated for ennis paths and <code>Fast_Alamut_File_query.sh</code> which is my own script that requires the installation of a few dependencies but runs significantly quicker (7-10 mins to process all samples when using 32 cores). As I translate my other scripts for other variant types to ennis I will add them here. Details on how to run the scripts are below.</li>
-<li>  <code>WGXXXX-WGXXXX</code> - These files contain the different WGS batches. Within each batch are the following sub-folders.
-
-<ul>
-<li>  <code>r03_alamut</code> - contains alamut annotated variant data.</li>
-<li>  <code>r03_assembly</code> - contains individual bam files for each sample in batch.</li>
-<li>  <code>r03_breakpoints</code> - contains putative cnv breakpoint data.</li>
-<li>  <code>r03_expansionhunterdenovo</code> - contains repeat expansion data (<q>denovo</q> here refers to detection of expansions without a reference, not actual de novo mutations.)</li>
-<li>  <code>r03_gvcfs</code> - contains gatk format gvcfs.</li>
-<li>  <code>r03_kevlar</code> - de novo (proper definition) variant analysis data.</li>
-<li>  <code>r03_metrics</code> - contains multiple sequence metrics including coverage, homozygosity and shared haplotype analysis (when <code>*_homozygosity.csv</code> only has one WGID in it&#39;s file name it&#39;s homozygosity anlysis, when there are 2+ it&#39;s haplotype analysis).</li>
-<li>  <code>r03_savvycnv</code> - SavvyCNV call data.</li>
-<li>  <code>r03_scramble</code> - ME insertion data from scramble software.</li>
-<li>  <code>r03_vcfs</code> - standard vcf files for trios and singletons.</li>
-</ul></li>
-</ul>
-
-<h4 id="toc_3">1.2 tNGS Data</h4>
-
-<p>Some important locations to note within the <code>targeted_sequencing</code> directory are as follows:</p>
-
-<ul>
-<li>  <code>batches</code> - this contains the batch data from the NHS pipeline and conatains the diagnostic panel outputs as well as the aligned read data for each sample in bam format.</li>
-<li>  <code>CNVs</code> - this contains Matthew&#39;s analysis of the tNGS data using SavvyCNV. It is arranged by panel and for each panel there will be files named in the format <code>tngsv50X_viterbi_N</code>; N is the bin size used to call CNVs. Bin sizes in the hundreds represent on-target calls while bin sizes in the hundreds of thousands to millions represent off-target calls. N.B. This data is still in quite a raw format and does not have predicted genotypes. To estimate the genotype look at the dosage in column 9.</li>
-<li>  <code>sample_lists</code> - this contains text files for each batch that contain the ennis file paths to all files sequenced in that batch.</li>
-<li>  <code>variant_calls</code> - this contains per sample variant call files for all sites (not just those in diagnostic panel genes) in both vcf and gvcf format.</li>
-</ul>
-
-<h3 id="toc_4">2 Useful scripts and software</h3>
-
-<h4 id="toc_5">2.1 My scripts: Variant Extraction</h4>
-
-<p>As previously mentioned, so far I&#39;ve translated 2 scripts for extracting WGS variants to ennis, both of which are in</p>
-
-<p><code>/ennis/projects/Research_Project-MRC147594/genome_sequencing/variant_search_scripts</code>.</p>
-
-<p>Both scripts rely on python which, unlike grace, needs to be loaded in from the module system. This is done as follows:</p>
-
-<p><code>module load Python/3.10.8-GCCcore-12.2.0</code></p>
-
-<p>The first script, which is a slightly modified version of Jaz&#39;s original script, is <code>Alamut_File_query.sh</code>. Unlike the original version of the script on grace however, it now takes the coordinates for the region of interest as a command line argument, meaning no editing of the file is required. It can be run as follows:</p>
-
-<p><code>./Alamut_File_query.sh &lt;CHR&gt; &lt;START-POS&gt; &lt;END-POS&gt; &gt; OUTPUT.txt</code></p>
-
-<p>The second script is one I created myself to more quickly perform the same task using parallelisation and better optimised filtering. It also performs a search of both the SNV/indel alamut files and the savvycnv files. However, the script does have a few Python dependencies which can be installed first as follows:</p>
-
-<p><code>pip install tqdm pandas pyarrow</code></p>
-
-<p>It can then be run as follows:</p>
-
-<p><code>./Fast_Alamut_Query.py --chr &lt;CHR&gt; --start &lt;START&gt; --end &lt;END&gt; --output &lt;OUTPUT&gt;</code></p>
-
-<p>It also takes the optionals flags <code>--threads</code> to specify the number of threads available for parallel processing of the Alamut files and <code>--vartype</code> which requires one of [&#39;SNV&#39;,&#39;CNV&#39;,&#39;both&#39;] as an argument and can be used to specify if only the SNV/indel files or the CNV files are to be searched.</p>
-
-<h4 id="toc_6">2.2 Mathew&#39;s Java scripts</h4>
-
-<p>All of Mathew&#39;s java scripts are stored in <code>/ennis/projects/Research_Project-MRC147594/software/in-house/software/java/</code>. There are hundreds in here, the majority of which are for specific steps of the diferrent data processing pipelines. However, one really useful one to know how to use is Mathew&#39;s <code>PlotIntervals</code> script, which can be used for plotting the homozygosity/haplotype data files from <code>r03_metrics</code>. It can be run as follows:</p>
-
-<div><pre><code class="language-none">java -cp /ennis/projects/Research_Project-MRC147594/software/in-house/software/java/ \
-   PlotIntervals \
-   output_file \
-   -S min_length_of_interval_bp \ 
-   input_file=label</code></pre></div>
-
-<p>Multiple input files can be specified e.g.</p>
-
-<div><pre><code class="language-none">java -cp /ennis/projects/Research_Project-MRC147594/software/in-house/software/java/ \
-    PlotIntervals \
-    WG0356-WG0208_homoygosity.pdf \
-    -S 1000000 \ 
-    WG0356_homozygosity.csv=WG0356 \
-    WG0208_homozygosity.csv=WG0208</code></pre></div>
-
-
-
-<script type="text/x-mathjax-config">
-(function () {
-
-MathJax.Hub.Config({
-	'showProcessingMessages': false,
-	'messageStyle': 'none'
-});
-
-if (typeof MathJaxListener !== 'undefined') {
-	MathJax.Hub.Register.StartupHook('End', function () {
-		MathJaxListener.invokeCallbackForKey_('End');
-	});
+.outer {
+  padding: 4px;
+  background-color: #0033a0; /* Blue */
 }
 
-})();
-</script>
+.mid {
+  padding: 2px;
+  background-color: #ffffff; /* White */
+}
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+.inner {
+  padding: 4px;
+  background-color: #00793e; /* Green */
+}
 
+.inner-most {
+  padding: 2px;
+  background-color: #ffb612; /* Yellow */
+}
 
-</body>
+.center {
+  padding: 6px;
+  background-color: #000000; /* Black */
+}
 
-</html>
+.container {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.logo {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #00793e; /* University of Exeter green */
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #0033a0; /* Blue */
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}

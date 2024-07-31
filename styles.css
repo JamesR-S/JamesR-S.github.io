@@ -25,11 +25,17 @@ body {
         0 0 0 24px #00793e,  /* Green */
         0 0 0 26px #ffffff,  /* White */
         0 0 0 32px #ff0000;  /* Red */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh; /* Adjust height as needed */
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 300px; /* Triple the original size if it was 100px */
     height: auto;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
